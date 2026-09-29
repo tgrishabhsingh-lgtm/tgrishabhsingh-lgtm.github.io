@@ -3,24 +3,27 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Rishabh Singh | BBA Finance, Data Analyst, AI for Finance</title>
-<meta name="description" content="Portfolio of Rishabh Singh: AML, KYC, financial crime analytics and automated risk scoring.">
+<title>Rishabh Singh | BBA Finance, Data Analyst, AML Analytics</title>
+<meta name="description" content="Portfolio of Rishabh Singh: AML transaction monitoring, STR reporting, Excel and Power BI dashboards.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <script src="https://cdn.tailwindcss.com"></script>
-<script>
-tailwind.config={theme:{extend:{fontFamily:{display:['Bricolage Grotesque','sans-serif'],sans:['IBM Plex Sans','sans-serif'],mono:['IBM Plex Mono','monospace']}}}}
-</script>
+<script>tailwind.config={theme:{extend:{fontFamily:{display:['Bricolage Grotesque','sans-serif'],sans:['IBM Plex Sans','sans-serif'],mono:['IBM Plex Mono','monospace']}}}}</script>
 <style>
 body{background:#0c1116;color:#cbd5e1}
 h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;color:#f1f5f9}
 :focus-visible{outline:2px solid #22d3ee;outline-offset:3px}
 .panel{background:#131a22;border:1px solid #232e3a}
 .chip{border:1px solid #2b3846;background:#16202a}
-.flag{animation:flash 1.4s ease-out 1}
-@keyframes flash{0%{background:rgba(244,63,94,.35)}100%{background:transparent}}
+.feed{pointer-events:none;user-select:none}
+.dot{width:9px;height:9px;border-radius:50%;display:inline-block}
+.g{background:#34d399;box-shadow:0 0 8px #34d399}.r{background:#f43f5e;box-shadow:0 0 10px #f43f5e}
+.pulse{animation:p 1.6s ease-in-out infinite}
+@keyframes p{50%{opacity:.35}}
+.flash{animation:f 1.2s ease-out 1}
+@keyframes f{0%{background:rgba(244,63,94,.35)}100%{background:transparent}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
@@ -37,225 +40,180 @@ h1,h2,h3{font-family:'Bricolage Grotesque',sans-serif;color:#f1f5f9}
       <li><a class="hover:text-emerald-300" href="#contact">Contact</a></li>
     </ul>
     <div class="flex items-center gap-2">
-      <a data-gh href="#" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 text-sm px-4 py-2 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300"><i class="fa-brands fa-github"></i>GitHub</a>
+      <a href="https://github.com/tgrishabhsingh-lgtm" target="_blank" rel="noopener" class="hidden sm:inline-flex items-center gap-2 text-sm px-4 py-2 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300"><i class="fa-brands fa-github"></i>GitHub</a>
       <button id="menuBtn" class="md:hidden w-10 h-10 rounded-lg chip" aria-label="Toggle menu" aria-expanded="false"><i class="fa-solid fa-bars"></i></button>
     </div>
   </nav>
   <ul id="mobileMenu" class="hidden md:hidden px-5 pb-4 space-y-1 text-sm">
-    <li><a class="block py-2" href="#about">About</a></li>
-    <li><a class="block py-2" href="#skills">Skills</a></li>
-    <li><a class="block py-2" href="#projects">Projects</a></li>
-    <li><a class="block py-2" href="#documents">Documents</a></li>
+    <li><a class="block py-2" href="#about">About</a></li><li><a class="block py-2" href="#skills">Skills</a></li>
+    <li><a class="block py-2" href="#projects">Projects</a></li><li><a class="block py-2" href="#documents">Documents</a></li>
     <li><a class="block py-2" href="#contact">Contact</a></li>
-    <li><a data-gh class="block py-2 text-emerald-300" href="#" target="_blank" rel="noopener">GitHub profile</a></li>
+    <li><a class="block py-2 text-emerald-300" href="https://github.com/tgrishabhsingh-lgtm" target="_blank" rel="noopener">GitHub profile</a></li>
   </ul>
 </header>
 
 <main id="top">
-<!-- Hero -->
 <section class="max-w-6xl mx-auto px-5 pt-14 pb-20 md:pt-24 grid lg:grid-cols-2 gap-12 items-center">
   <div>
-    <p class="text-emerald-300 font-mono text-sm mb-4">Rishabh Singh, BBA Finance | Data Analyst | AI for Finance</p>
-    <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.4rem] leading-[1.05] tracking-tight">Finance training, financial crime controls, and models that catch what rules miss.</h1>
-    <p class="mt-6 text-lg max-w-xl">I build AML transaction monitoring, KYC verification and risk scoring systems that compliance teams can audit, explain and trust.</p>
+    <p class="text-emerald-300 font-mono text-sm mb-4">Rishabh Singh | BBA Finance | Data Analyst | AI for Finance</p>
+    <h1 class="font-display font-extrabold text-4xl sm:text-5xl lg:text-[3.3rem] leading-[1.05] tracking-tight">Finance graduate turning transaction data into AML alerts and STR-ready case files.</h1>
+    <p class="mt-6 text-lg max-w-xl">I build rule-based transaction monitoring in Excel and Power BI, and write the case narratives compliance teams need to file a Suspicious Transaction Report.</p>
     <ul class="mt-6 flex flex-wrap gap-2 text-sm">
-      <li class="chip rounded-full px-3 py-1">AML &amp; Transaction Monitoring</li>
-      <li class="chip rounded-full px-3 py-1">KYC Verification Systems</li>
-      <li class="chip rounded-full px-3 py-1">AI Risk Modeling</li>
-      <li class="chip rounded-full px-3 py-1">Financial Data Analysis</li>
+      <li class="chip rounded-full px-3 py-1">AML &amp; Transaction Monitoring</li><li class="chip rounded-full px-3 py-1">KYC Verification Systems</li>
+      <li class="chip rounded-full px-3 py-1">AI Risk Modeling</li><li class="chip rounded-full px-3 py-1">Financial Data Analysis</li>
     </ul>
     <div class="mt-8 flex flex-wrap gap-3">
       <a href="#projects" class="px-6 py-3 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300">Explore Projects</a>
-      <a data-gh href="#" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10"><i class="fa-brands fa-github mr-2"></i>GitHub Profile</a>
+      <a href="https://github.com/tgrishabhsingh-lgtm" target="_blank" rel="noopener" class="px-6 py-3 rounded-lg border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10"><i class="fa-brands fa-github mr-2"></i>GitHub Profile</a>
     </div>
   </div>
 
-  <!-- Live ledger: the hero's one memorable element -->
-  <div class="panel rounded-xl overflow-hidden shadow-2xl shadow-black/40" aria-label="Simulated transaction monitoring feed">
-    <div class="flex items-center justify-between px-4 py-3 border-b border-[#232e3a] text-xs font-mono">
-      <span class="text-slate-400">txn_monitor / live feed (simulated)</span>
-      <span class="text-emerald-300"><i class="fa-solid fa-circle text-[8px] mr-1"></i>scoring</span>
+  <div class="panel rounded-xl overflow-hidden shadow-2xl shadow-black/40 feed" role="img" aria-label="Animated monitoring feed showing sample transactions being scored, with alerts raised on suspicious ones">
+    <div id="bar" class="flex items-center justify-between px-4 py-3 border-b border-[#232e3a] text-xs font-mono">
+      <span class="text-slate-400">transaction risk monitor / sample batch</span>
+      <span id="state" class="text-emerald-300"><i class="dot g pulse mr-2"></i>Monitoring</span>
     </div>
     <table class="w-full text-xs font-mono">
-      <thead class="text-slate-500 text-left"><tr><th class="px-4 py-2 font-normal">Account</th><th class="font-normal">Amount</th><th class="font-normal">Pattern</th><th class="font-normal pr-4 text-right">Risk</th></tr></thead>
+      <thead class="text-slate-500 text-left"><tr><th class="pl-4 py-2 font-normal w-6"></th><th class="font-normal">Customer</th><th class="font-normal">Amount</th><th class="font-normal pr-4 text-right">Result</th></tr></thead>
       <tbody id="ledger"></tbody>
     </table>
-    <div class="px-4 py-3 border-t border-[#232e3a] text-xs font-mono text-slate-400 flex justify-between"><span>scanned <b id="cScan" class="text-slate-200">0</b></span><span>flagged <b id="cFlag" class="text-rose-400">0</b></span></div>
+    <div class="px-4 py-3 border-t border-[#232e3a] text-xs font-mono text-slate-400 flex justify-between"><span>scanned <b id="cScan" class="text-slate-200">0</b></span><span>alerts <b id="cFlag" class="text-rose-400">0</b></span></div>
   </div>
 </section>
 
-<!-- About -->
 <section id="about" class="max-w-6xl mx-auto px-5 py-16 border-t border-[#232e3a]">
   <div class="grid md:grid-cols-5 gap-10">
-    <h2 class="md:col-span-2 font-display font-bold text-3xl">Business fundamentals first, machine learning second</h2>
+    <h2 class="md:col-span-2 font-display font-bold text-3xl">Finance fundamentals, applied to financial crime data</h2>
     <div class="md:col-span-3 space-y-4 max-w-2xl">
-      <p>Most false alerts come from models built without understanding how money actually moves. My BBA in Finance gives me the grounding in banking products, credit risk and regulation, so I start from the typology (structuring, layering, shell-company flows) and only then choose a model.</p>
-      <p>I pair that domain view with Python, SQL and Power BI to engineer behavioral features, tune alert thresholds, and document every decision the way an examiner expects: clear rationale, reproducible results, and a defensible audit trail.</p>
-      <p>Currently focused on reducing false positives in transaction monitoring and applying LLMs to first-draft SAR narratives, always with a human analyst making the final call.</p>
+      <p>I am a BBA Finance graduate from DAVV, Indore, with data analytics training in SQL, Python, Advanced Excel, Power BI and Tableau. My current focus is Anti-Money Laundering analytics: turning red-flag typologies into rules, dashboards and reviewable case files.</p>
+      <p>I am looking for an entry-level Data Analyst, Financial Analyst or AML / Compliance Analyst role, and I am learning transaction monitoring, typologies, KYC and STR reporting.</p>
+      <ul class="grid sm:grid-cols-2 gap-3 pt-2 text-sm">
+        <li class="panel rounded-lg p-4"><b class="text-slate-100">BBA in Finance, 2023 to 2026</b><br>Devi Ahilya Vishwavidyalaya, Indore. CGPA 7.4 / 10.</li>
+        <li class="panel rounded-lg p-4"><b class="text-slate-100">Data Analytics with Project Work</b><br>The Prime Step's Technologies, Indore. Certificate of Excellence.</li>
+        <li class="panel rounded-lg p-4 sm:col-span-2"><b class="text-slate-100">AI Tools &amp; Claude Workshop, Sep 2026</b><br>be10x. Applied AI to analyse data, build presentations and debug code.</li>
+      </ul>
     </div>
   </div>
 </section>
 
-<!-- Skills -->
 <section id="skills" class="max-w-6xl mx-auto px-5 py-16 border-t border-[#232e3a]">
   <h2 class="font-display font-bold text-3xl mb-8">Core competencies</h2>
   <div class="grid md:grid-cols-2 gap-6">
-    <div class="panel rounded-xl p-6">
-      <h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-scale-balanced text-emerald-400 mr-2"></i>Compliance &amp; Domain</h3>
-      <ul class="flex flex-wrap gap-2 text-sm" data-chips="AML Typologies,KYC/CIP Compliance,Sanction Screening,SAR Drafting,Fraud Detection"></ul>
-    </div>
-    <div class="panel rounded-xl p-6">
-      <h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-microchip text-cyan-400 mr-2"></i>Tech &amp; AI</h3>
-      <ul class="flex flex-wrap gap-2 text-sm" data-chips="Python (Pandas, Scikit-Learn, PyTorch),SQL,Power BI,Machine Learning,Vertex AI / LLMs for Finance"></ul>
-    </div>
+    <div class="panel rounded-xl p-6"><h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-scale-balanced text-emerald-400 mr-2"></i>Compliance &amp; Domain</h3>
+      <ul class="flex flex-wrap gap-2 text-sm" data-chips="Anti-Money Laundering (AML),Transaction Monitoring,KYC,STR Drafting,Red-Flag Typologies,Risk Assessment,Financial Analysis,Financial Reporting"></ul></div>
+    <div class="panel rounded-xl p-6"><h3 class="text-xl font-bold mb-4"><i class="fa-solid fa-microchip text-cyan-400 mr-2"></i>Tech &amp; Analytics</h3>
+      <ul class="flex flex-wrap gap-2 text-sm" data-chips="SQL,Python,Pandas,NumPy,Advanced Excel,Power BI (DAX / Power Query),Tableau,Git / GitHub,AI Tools (Claude)"></ul></div>
   </div>
 </section>
 
-<!-- Projects -->
 <section id="projects" class="max-w-6xl mx-auto px-5 py-16 border-t border-[#232e3a]">
   <h2 class="font-display font-bold text-3xl">Featured projects</h2>
-  <p class="mt-3 mb-10 max-w-2xl">Each project starts with a compliance problem and ends with a measurable change in alert quality or review time.</p>
-  <div id="projectGrid" class="grid lg:grid-cols-3 gap-6"></div>
+  <p class="mt-3 mb-10 max-w-2xl">Built on a sample March 2026 batch of 20 transactions across 9 fictional customers. Every figure below comes from the workbook.</p>
+  <div id="projectGrid" class="grid md:grid-cols-2 lg:grid-cols-3 gap-6"></div>
 </section>
 
-<!-- Documents -->
 <section id="documents" class="max-w-6xl mx-auto px-5 py-16 border-t border-[#232e3a]">
-  <h2 class="font-display font-bold text-3xl">Research &amp; documentation library</h2>
-  <p class="mt-3 mb-10 max-w-2xl">Whitepapers, templates and frameworks I use in day-to-day compliance analysis. Read a summary here or download the full PDF.</p>
-  <div id="docGrid" class="grid sm:grid-cols-2 gap-5"></div>
+  <h2 class="font-display font-bold text-3xl">Reports &amp; downloads</h2>
+  <p class="mt-3 mb-10 max-w-2xl">The case report and model behind the AML project, plus my resume.</p>
+  <div id="docGrid" class="grid sm:grid-cols-3 gap-5"></div>
 </section>
 
-<!-- Contact -->
 <section id="contact" class="max-w-6xl mx-auto px-5 py-16 border-t border-[#232e3a]">
   <div class="grid md:grid-cols-2 gap-12">
     <div>
       <h2 class="font-display font-bold text-3xl">Contact me</h2>
-      <p class="mt-3 max-w-md">Open to analyst roles and projects in financial crime compliance, risk analytics and AI for finance.</p>
+      <p class="mt-3 max-w-md">Open to entry-level Data Analyst, Financial Analyst and AML / Compliance Analyst roles. Based in Indore, Madhya Pradesh.</p>
       <div class="mt-6 flex flex-wrap gap-3">
-        <a data-gh href="#" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300"><i class="fa-brands fa-github mr-2"></i>View GitHub Repositories</a>
-        <a href="resume.pdf" download class="px-5 py-3 rounded-lg border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10"><i class="fa-solid fa-download mr-2"></i>Download Resume</a>
+        <a href="https://github.com/tgrishabhsingh-lgtm" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300"><i class="fa-brands fa-github mr-2"></i>View GitHub Repositories</a>
+        <a href="resume.pdf" target="_blank" rel="noopener" class="px-5 py-3 rounded-lg border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10"><i class="fa-solid fa-download mr-2"></i>Download Resume</a>
       </div>
       <ul class="mt-8 space-y-3 text-sm">
-        <li><a id="mailLink" class="hover:text-emerald-300" href="#"><i class="fa-solid fa-envelope w-6 text-emerald-400"></i><span id="mailText"></span></a></li>
-        <li><a id="liLink" class="hover:text-emerald-300" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin w-6 text-cyan-400"></i>LinkedIn profile</a></li>
-        <li><a data-gh class="hover:text-emerald-300" href="#" target="_blank" rel="noopener"><i class="fa-brands fa-github w-6 text-slate-300"></i>GitHub profile</a></li>
+        <li><a class="hover:text-emerald-300" href="mailto:tgrishabhsingh@gmail.com"><i class="fa-solid fa-envelope w-6 text-emerald-400"></i>tgrishabhsingh@gmail.com</a></li>
+        <li><a class="hover:text-emerald-300" href="https://www.linkedin.com/in/rishabh-singh-61321b349" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin w-6 text-cyan-400"></i>LinkedIn profile</a></li>
+        <li><a class="hover:text-emerald-300" href="https://github.com/tgrishabhsingh-lgtm" target="_blank" rel="noopener"><i class="fa-brands fa-github w-6 text-slate-300"></i>GitHub profile</a></li>
       </ul>
     </div>
     <form id="contactForm" class="panel rounded-xl p-6 space-y-4" novalidate>
-      <div><label for="fName" class="text-sm block mb-1">Name</label><input id="fName" required class="w-full rounded-lg bg-[#0c1116] border border-[#2b3846] px-3 py-2"></div>
-      <div><label for="fEmail" class="text-sm block mb-1">Email</label><input id="fEmail" type="email" required class="w-full rounded-lg bg-[#0c1116] border border-[#2b3846] px-3 py-2"></div>
-      <div><label for="fMsg" class="text-sm block mb-1">Message</label><textarea id="fMsg" rows="4" required class="w-full rounded-lg bg-[#0c1116] border border-[#2b3846] px-3 py-2"></textarea></div>
+      <div><label for="fName" class="text-sm block mb-1">Name</label><input id="fName" class="w-full rounded-lg bg-[#0c1116] border border-[#2b3846] px-3 py-2"></div>
+      <div><label for="fEmail" class="text-sm block mb-1">Email</label><input id="fEmail" type="email" class="w-full rounded-lg bg-[#0c1116] border border-[#2b3846] px-3 py-2"></div>
+      <div><label for="fMsg" class="text-sm block mb-1">Message</label><textarea id="fMsg" rows="4" class="w-full rounded-lg bg-[#0c1116] border border-[#2b3846] px-3 py-2"></textarea></div>
       <button class="w-full py-3 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300">Send message</button>
       <p id="formNote" class="text-sm min-h-[1.25rem]" role="status"></p>
     </form>
   </div>
 </section>
 </main>
-
-<footer class="border-t border-[#232e3a] py-8 text-center text-sm text-slate-500">
-  &copy; <span id="yr"></span> Rishabh Singh. Built with HTML and Tailwind CSS.
-</footer>
-
-<!-- Document modal -->
-<div id="modal" class="hidden fixed inset-0 z-50 bg-black/70 p-4 overflow-y-auto" role="dialog" aria-modal="true" aria-labelledby="mTitle">
-  <div class="panel rounded-xl max-w-2xl mx-auto mt-10 p-6">
-    <div class="flex justify-between gap-4"><h3 id="mTitle" class="text-2xl font-bold"></h3><button id="mClose" class="w-9 h-9 shrink-0 rounded-lg chip" aria-label="Close"><i class="fa-solid fa-xmark"></i></button></div>
-    <p id="mMeta" class="text-sm text-cyan-300 font-mono mt-1"></p>
-    <ul id="mBody" class="mt-5 space-y-3 list-disc pl-5"></ul>
-    <a id="mDl" download class="inline-block mt-6 px-5 py-2.5 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300"><i class="fa-solid fa-file-pdf mr-2"></i>Download PDF</a>
-  </div>
-</div>
+<footer class="border-t border-[#232e3a] py-8 text-center text-sm text-slate-500">&copy; <span id="yr"></span> Rishabh Singh</footer>
 
 <script>
-/* ===== EDIT THESE ===== */
-const GH_USER=' tgrishabhsingh-lgtm';            // your GitHub username
-const EMAIL='tgrishabhsingh@gmail.com'; // your email
-const LINKEDIN='www.linkedin.com/in/rishabh-singh-61321b349';
-/* ====================== */
-const GH='https://github.com/'+GH_USER;
-const $=s=>document.querySelector(s), $$=s=>[...document.querySelectorAll(s)];
-$$('[data-gh]').forEach(a=>a.href=GH);
-$('#mailLink').href='mailto:'+EMAIL; $('#mailText').textContent=EMAIL; $('#liLink').href=LINKEDIN;
+const $=s=>document.querySelector(s),$$=s=>[...document.querySelectorAll(s)];
 $('#yr').textContent=new Date().getFullYear();
 $('#menuBtn').onclick=e=>{const m=$('#mobileMenu');m.classList.toggle('hidden');e.currentTarget.setAttribute('aria-expanded',!m.classList.contains('hidden'))};
 $$('#mobileMenu a').forEach(a=>a.addEventListener('click',()=>$('#mobileMenu').classList.add('hidden')));
 $$('[data-chips]').forEach(ul=>ul.innerHTML=ul.dataset.chips.split(/,(?![^()]*\))/).map(t=>`<li class="chip rounded-full px-3 py-1.5">${t}</li>`).join(''));
 
-/* Projects */
+const XL='AML_Transaction_Monitoring_Dashboard.xlsx',PDF='STR_Case_Report.pdf';
 const projects=[
-{title:'AI-Powered AML Transaction Monitoring & Anomaly Detection',
- problem:'Static threshold rules generate thousands of alerts while missing structured deposits kept just under reporting limits, and funds passed quickly through chains of accounts.',
- feats:['Rule-based flags for structuring, rapid movement and high-risk corridors','DBSCAN and Isolation Forest clustering to surface smurfing and layering rings','Network graph view of linked accounts for investigator triage'],
- metrics:[['31%','fewer false positives'],['2.4x','more suspicious rings found'],['0.91','ROC-AUC']],
- tags:['Python','SQL','Isolation Forest','DBSCAN','NetworkX'],live:true,repo:'aml-transaction-monitoring'},
-{title:'Automated KYC Verification & Entity Resolution Engine',
- problem:'Manual onboarding checks are slow, and name variations, transliterations and shell-company structures let sanctioned or high-risk parties slip past exact-match screening.',
- feats:['Fuzzy matching (Jaro-Winkler, token-set) against sanctions and PEP lists','Document verification pipeline: OCR, field validation, cross-check with application data','Gradient-boosted customer risk score with reason codes for each factor'],
- metrics:[['94%','true match recall'],['-58%','manual review time'],['0.88','risk model F1']],
- tags:['Python','RapidFuzz','Random Forest','XGBoost','OCR'],live:false,repo:'kyc-entity-resolution'},
-{title:'Predictive Credit & Compliance Risk Dashboard',
- problem:'Compliance and credit teams review the same customers in separate tools, so high-risk borrowers and repeated false alerts are hard to see in one place.',
- feats:['Power BI dashboard fed by a Python scoring pipeline and SQL views','False-positive reduction analysis by rule, segment and analyst outcome','Drill-down from portfolio risk to customer-level alert history'],
- metrics:[['27%','alert volume reduced'],['40%','faster monthly reporting'],['12','rules re-tuned']],
- tags:['Power BI','Python','SQL','Random Forest','DAX'],live:true,repo:'credit-compliance-risk-dashboard'}];
+{t:'AML Transaction Monitoring Dashboard (Excel)',live:1,
+ p:'Manual review cannot keep up with structuring, pass-through and dormant-account activity hidden in daily transactions. This dashboard scores every transaction with transparent rules and shows what needs review.',
+ f:['KPI cards, alert-type chart and a customer review table','Rules built with SUMIFS, COUNTIFS and SUMPRODUCT, with assumptions documented','Chart feeder tables for counterparties and days of flagged money'],
+ m:[['13 of 20','transactions flagged'],['Rs 81.5 lakh','flagged volume'],['5 of 9','customers high risk']],
+ tags:['Excel','SUMIFS','COUNTIFS','SUMPRODUCT'],b:[['Download Excel model',XL,'dl'],['STR Case Report (PDF)',PDF]]},
+{t:'Rule-Based Detection Engine: Structuring, Mule and Dormant Velocity',
+ p:'Typologies need to be turned into precise, testable logic so alerts are explainable to an auditor or investigator.',
+ f:['Structuring: 2 or more near-threshold cash credits (Rs 45,000 to 49,999) within 3 days','Mule / pass-through: debit of Rs 50,000+ that is 95% or more of the previous day\'s credits','Dormant velocity: Rs 10 lakh+ credit after 180 days of inactivity, plus a turnover-ratio check'],
+ m:[['6','structuring alerts'],['2','mule alerts'],['2','dormant alerts']],
+ tags:['AML typologies','Red flags','Risk rating'],b:[['View rules in report',PDF]]},
+{t:'STR Case Dossier Generator',
+ p:'Filing a Suspicious Transaction Report needs a clear narrative, and writing one from raw rows is slow and inconsistent.',
+ f:['Pick a customer ID and the sheet fills in profile, flagged value and turnover ratio','Auto-written 5 Ws narrative: who, what, when, where, why suspicious','Lists up to 10 flagged transactions per customer, ready to copy into the FIU-IND filing'],
+ m:[['5','case dossiers'],['13','transactions documented'],['5 Ws','narrative format']],
+ tags:['STR','FIU-IND','Case narrative','Excel'],b:[['STR Case Report (PDF)',PDF],['Download Excel model',XL,'dl']]},
+{t:'AML Transaction Monitoring Dashboard (Power BI)',live:1,
+ p:'Excel is good for building the logic, but reviewers need an interactive view to track alerts and drill into customers.',
+ f:['Converted the Excel AML model into an interactive Power BI dashboard','High-risk customers and flagged transactions visible at a glance','Supports faster review and reporting'],
+ m:[],tags:['Power BI','DAX','Power Query','Excel'],b:[]},
+{t:'Sales Statement Dashboard',
+ p:'Sales, revenue, profit and regional performance sat in raw tables, which made decisions slow.',
+ f:['Interactive Power BI dashboard built with Power Query and DAX','Slicers, filters and charts: bar, pie, line and KPI cards','Region-wise performance view to support decision-making'],
+ m:[],tags:['Power BI','Power Query','DAX','Excel'],b:[]}];
 $('#projectGrid').innerHTML=projects.map(p=>`
 <article class="panel rounded-xl p-6 flex flex-col">
-  <div class="flex items-start justify-between gap-3"><h3 class="text-xl font-bold leading-snug">${p.title}</h3>${p.live?'<span class="shrink-0 text-xs font-mono text-emerald-300 border border-emerald-400/40 rounded-full px-2 py-0.5"><i class="fa-solid fa-circle text-[6px] mr-1 align-middle"></i>Live demo</span>':''}</div>
-  <h4 class="mt-4 text-sm font-medium text-cyan-300">Problem</h4>
-  <p class="text-sm mt-1">${p.problem}</p>
-  <ul class="mt-4 space-y-2 text-sm">${p.feats.map(f=>`<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-xs"></i><span>${f}</span></li>`).join('')}</ul>
-  <dl class="mt-5 grid grid-cols-3 gap-2 border-y border-[#232e3a] py-4">${p.metrics.map(m=>`<div><dt class="font-display text-2xl font-bold text-slate-100">${m[0]}</dt><dd class="text-xs text-slate-400">${m[1]}</dd></div>`).join('')}</dl>
+  <div class="flex items-start justify-between gap-3"><h3 class="text-xl font-bold leading-snug">${p.t}</h3>${p.live?'<span class="shrink-0 text-xs font-mono text-emerald-300 border border-emerald-400/40 rounded-full px-2 py-0.5 select-none"><i class="dot g pulse mr-1.5" style="width:6px;height:6px"></i>Live</span>':''}</div>
+  <h4 class="mt-4 text-sm font-medium text-cyan-300">Problem</h4><p class="text-sm mt-1">${p.p}</p>
+  <ul class="mt-4 space-y-2 text-sm">${p.f.map(x=>`<li class="flex gap-2"><i class="fa-solid fa-check text-emerald-400 mt-1 text-xs"></i><span>${x}</span></li>`).join('')}</ul>
+  ${p.m.length?`<dl class="mt-5 grid grid-cols-3 gap-2 border-y border-[#232e3a] py-4">${p.m.map(m=>`<div><dt class="font-display text-xl font-bold text-slate-100">${m[0]}</dt><dd class="text-xs text-slate-400">${m[1]}</dd></div>`).join('')}</dl>`:''}
   <ul class="mt-4 flex flex-wrap gap-1.5 text-xs font-mono">${p.tags.map(t=>`<li class="chip rounded px-2 py-1">${t}</li>`).join('')}</ul>
-  <div class="mt-6 pt-2 flex flex-wrap gap-2 mt-auto">
-    <a data-repo="${p.repo}" href="#" target="_blank" rel="noopener" class="flex-1 text-center text-sm px-4 py-2 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300"><i class="fa-brands fa-github mr-1"></i>GitHub Repository</a>
-    <a href="case-studies/${p.repo}.pdf" class="flex-1 text-center text-sm px-4 py-2 rounded-lg border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10">Case Study / Paper</a>
-  </div>
+  ${p.b.length?`<div class="mt-auto pt-6 flex flex-wrap gap-2">${p.b.map((b,i)=>`<a href="${b[1]}" ${b[2]?'download':'target="_blank" rel="noopener"'} class="flex-1 text-center text-sm px-3 py-2 rounded-lg ${i?'border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10':'bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300'}">${b[0]}</a>`).join('')}</div>`:''}
 </article>`).join('');
-$$('[data-repo]').forEach(a=>a.href=GH+'/'+a.dataset.repo);
 
-/* Documents */
 const docs=[
-{t:'Smurfing & Layering: Typology Whitepaper',type:'Whitepaper',pages:14,icon:'fa-file-lines',file:'aml-typology-whitepaper.pdf',
- pts:['Defines placement, layering and integration with worked transaction examples.','Explains how structured deposits below reporting thresholds appear in account-level data.','Lists behavioral red flags: rapid in-and-out movement, round-amount transfers, dormant accounts suddenly active.','Maps each typology to detection features usable in rules and ML models.']},
-{t:'SAR Narrative Framework',type:'Framework',pages:8,icon:'fa-pen-to-square',file:'sar-framework.pdf',
- pts:['Structures a SAR around who, what, when, where, why and how.','Provides a checklist for stating suspicious activity clearly and without speculation.','Includes sample narrative language for structuring and third-party funnel accounts.','Covers documentation standards so decisions are traceable in an audit.']},
-{t:'KYC/CIP Compliance Audit Template',type:'Audit template',pages:6,icon:'fa-clipboard-check',file:'kyc-audit-template.pdf',
- pts:['Sampling worksheet for customer files across low, medium and high-risk tiers.','Tests for identity verification, beneficial ownership capture and PEP/sanctions screening evidence.','Scoring guide for exceptions, with escalation and remediation tracking.','Designed to be adapted to institution-specific policy.']},
-{t:'Reducing False Positives in Transaction Monitoring',type:'Analytical report',pages:18,icon:'fa-chart-line',file:'false-positive-report.pdf',
- pts:['Compares threshold tuning, segmentation and ML-based alert prioritization.','Uses precision, recall and analyst workload as the evaluation measures.','Shows below-the-line testing to confirm that tuning does not hide real risk.','Recommends a governance cycle for model validation and rule review.']}];
-$('#docGrid').innerHTML=docs.map((d,i)=>`
-<article class="panel rounded-xl p-5 flex gap-4">
-  <div class="w-11 h-11 shrink-0 rounded-lg chip grid place-items-center text-cyan-300"><i class="fa-solid ${d.icon}"></i></div>
-  <div class="flex-1"><h3 class="text-lg font-bold leading-snug">${d.t}</h3><p class="text-xs font-mono text-slate-400 mt-1">${d.type}, ${d.pages} pages</p>
-  <div class="mt-4 flex flex-wrap gap-2 text-sm"><button data-doc="${i}" class="px-4 py-1.5 rounded-lg bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300">Read Document</button><a href="docs/${d.file}" download class="px-4 py-1.5 rounded-lg border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10">Download PDF</a></div></div>
-</article>`).join('');
-const modal=$('#modal');let lastBtn;
-$$('[data-doc]').forEach(b=>b.onclick=()=>{const d=docs[b.dataset.doc];lastBtn=b;
- $('#mTitle').textContent=d.t;$('#mMeta').textContent=d.type+', '+d.pages+' pages';
- $('#mBody').innerHTML=d.pts.map(p=>`<li>${p}</li>`).join('');$('#mDl').href='docs/'+d.file;
- modal.classList.remove('hidden');document.body.style.overflow='hidden';$('#mClose').focus()});
-const closeM=()=>{modal.classList.add('hidden');document.body.style.overflow='';lastBtn&&lastBtn.focus()};
-$('#mClose').onclick=closeM;modal.onclick=e=>{if(e.target===modal)closeM()};
-addEventListener('keydown',e=>{if(e.key==='Escape'&&!modal.classList.contains('hidden'))closeM()});
+['fa-file-pdf','STR Case Report','PDF, 6 pages. Batch summary, detection rules and five 5 Ws case dossiers.',[['Read Document',PDF],['Download PDF',PDF,1]]],
+['fa-file-excel','AML Dashboard Model','Excel workbook with Dashboard, Data, STR_Report, Rules and Summary sheets.',[['Download Excel',XL,1]]],
+['fa-file-lines','Resume','Education, skills, certifications and projects.',[['Read Document','resume.pdf'],['Download PDF','resume.pdf',1]]]];
+$('#docGrid').innerHTML=docs.map(d=>`
+<article class="panel rounded-xl p-5 flex flex-col"><div class="w-11 h-11 rounded-lg chip grid place-items-center text-cyan-300"><i class="fa-solid ${d[0]}"></i></div>
+<h3 class="text-lg font-bold mt-4">${d[1]}</h3><p class="text-sm mt-1 text-slate-400">${d[2]}</p>
+<div class="mt-auto pt-5 flex flex-wrap gap-2 text-sm">${d[3].map((b,i)=>`<a href="${b[1]}" ${b[2]?'download':'target="_blank" rel="noopener"'} class="px-4 py-1.5 rounded-lg ${i?'border border-cyan-400/50 text-cyan-300 hover:bg-cyan-400/10':'bg-emerald-400 text-slate-900 font-medium hover:bg-emerald-300'}">${b[0]}</a>`).join('')}</div></article>`).join('');
 
-/* Contact form: opens the visitor's email app (no backend needed) */
 $('#contactForm').onsubmit=e=>{e.preventDefault();
  const n=$('#fName').value.trim(),m=$('#fEmail').value.trim(),g=$('#fMsg').value.trim(),note=$('#formNote');
  if(!n||!/^\S+@\S+\.\S+$/.test(m)||!g){note.className='text-sm text-rose-400';note.textContent='Enter your name, a valid email and a message.';return}
- location.href=`mailto:${EMAIL}?subject=${encodeURIComponent('Portfolio enquiry from '+n)}&body=${encodeURIComponent(g+'\n\nReply to: '+m)}`;
+ location.href=`mailto:tgrishabhsingh@gmail.com?subject=${encodeURIComponent('Portfolio enquiry from '+n)}&body=${encodeURIComponent(g+'\n\nReply to: '+m)}`;
  note.className='text-sm text-emerald-300';note.textContent='Your email app should open with the message ready to send.'};
 
-/* Hero ledger simulation */
-const pats=[['Normal',8,0],['Normal',14,0],['Structuring',88,1],['Normal',11,0],['Rapid pass-through',93,1],['Normal',19,0],['High-risk corridor',79,1],['Normal',6,0],['Layering chain',96,1]];
-const amt={Normal:()=>(200+Math.random()*4800).toFixed(0),Structuring:()=>(9000+Math.random()*900).toFixed(0)};
-let scan=0,flag=0;const tb=$('#ledger');
-function row(){const [p,r,f]=pats[Math.floor(Math.random()*pats.length)];scan+=1+Math.floor(Math.random()*40);if(f)flag++;
- const a=(amt[p]?amt[p]():(15000+Math.random()*60000).toFixed(0)).replace(/\B(?=(\d{3})+$)/g,',');
- const tr=document.createElement('tr');tr.className='border-t border-[#1d2731]'+(f?' flag':'');
- tr.innerHTML=`<td class="px-4 py-2 text-slate-300">AC-${1000+Math.floor(Math.random()*9000)}</td><td>$${a}</td><td class="${f?'text-rose-400':'text-slate-400'}">${p}</td><td class="pr-4 text-right ${f?'text-rose-400':'text-emerald-300'}">${r}</td>`;
- tb.prepend(tr);while(tb.children.length>6)tb.lastChild.remove();$('#cScan').textContent=scan.toLocaleString();$('#cFlag').textContent=flag}
-for(let i=0;i<6;i++)row();
-if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(row,1800);
+/* Live feed: the sample batch from the workbook (name, amount, alert?) */
+const T=[['Aarav Sharma',25000,0],['Vikram Malhotra',49000,1],['Pooja Verma',1200000,1],['Sneha Nair',150000,0],['Imran Khan',49000,1],['Rohan Gupta',15000,0],['Karan Mehra',2500000,1],['Ananya Sen',55000,0],['Rajesh Patel',990000,1],['Pooja Verma',1180000,1]];
+const fmt=n=>'Rs '+n.toLocaleString('en-IN');let i=0,scan=0,al=0,tm;
+function tick(){const [n,a,f]=T[i++%T.length];scan++;if(f)al++;
+ const tr=document.createElement('tr');tr.className='border-t border-[#1d2731]'+(f?' flash':'');
+ tr.innerHTML=`<td class="pl-4 py-2"><i class="dot ${f?'r':'g'}"></i></td><td class="text-slate-300">${n}</td><td>${fmt(a)}</td><td class="pr-4 text-right ${f?'text-rose-400':'text-emerald-300'}">${f?'ALERT':'Clear'}</td>`;
+ $('#ledger').prepend(tr);while($('#ledger').children.length>6)$('#ledger').lastChild.remove();
+ $('#cScan').textContent=scan;$('#cFlag').textContent=al;
+ const s=$('#state');s.className=f?'text-rose-400':'text-emerald-300';s.innerHTML=f?'<i class="dot r pulse mr-2"></i>Alert mode':'<i class="dot g pulse mr-2"></i>Monitoring';
+ clearTimeout(tm);if(f)tm=setTimeout(()=>{s.className='text-emerald-300';s.innerHTML='<i class="dot g pulse mr-2"></i>Monitoring'},1400)}
+for(let k=0;k<6;k++)tick();
+if(!matchMedia('(prefers-reduced-motion:reduce)').matches)setInterval(tick,1800);
 </script>
 </body>
 </html>
